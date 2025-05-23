@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>EV Fault Monitor</title></head>
+<body>
+    <h2>Live Sensor Data</h2>
+    <ul>
+        <li>Temperature: {{ data.temperature }} °C</li>
+        <li>Vibration: {{ data.vibration }}</li>
+        <li>Voltage: {{ data.voltage }} V</li>
+        <li>Current: {{ data.current }} A</li>
+    </ul>
+    <h3>Status: {% if fault %}⚠️ Fault Detected{% else %}✅ All Good{% endif %}</h3>
+</body>
+</html>
